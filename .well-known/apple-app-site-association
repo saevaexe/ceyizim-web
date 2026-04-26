@@ -1,0 +1,22 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["5V9A3GUJ32.com.osmanseven.ceyizim"],
+        "components": [
+          {
+            "/": "/invite/*",
+            "comment": "Family invite deep links"
+          },
+          {
+            "/": "/share/*",
+            "comment": "Shared list deep links"
+          }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": ["5V9A3GUJ32.com.osmanseven.ceyizim"]
+  }
+}
