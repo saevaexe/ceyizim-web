@@ -7,7 +7,7 @@
 - Terms & subscription disclosure
 - Universal Links AASA dosyası
 
-Live URL: https://saevaexe.github.io/ceyizim/
+Live URL: https://saevaexe.github.io/ceyizim-web/
 
 ## Yapı
 
@@ -26,29 +26,24 @@ ceyizim-web/
 
 ## Deploy (GitHub Pages)
 
-1. GitHub'da yeni public repo: `saevaexe/ceyizim` (mevcut private app repo'suyla karışmasın diye `ceyizim-web` adı da olabilir; URL `saevaexe.github.io/ceyizim` olacaksa repo adı **`ceyizim`** olmalı)
+1. GitHub'da public repo: `saevaexe/ceyizim-web` (private app repo `saevaexe/ceyizim` ayrı kalır)
 2. Lokal:
    ```
    cd /Users/osmanseven/ceyizim-web
-   git init
-   git add .
-   git commit -m "ceyizim-web initial"
-   git branch -M main
-   git remote add origin git@github.com:saevaexe/ceyizim.git
-   git push -u origin main
+   gh repo create saevaexe/ceyizim-web --public --source=. --push
    ```
 3. GitHub repo Settings → Pages → Source: `main` branch, `/ (root)` folder → Save
-4. ~1-2 dk sonra `https://saevaexe.github.io/ceyizim/` aktif
+4. ~1-2 dk sonra `https://saevaexe.github.io/ceyizim-web/` aktif
 
 ### URL doğrulama
 
-- [ ] `https://saevaexe.github.io/ceyizim/` → 200, landing yüklendi
-- [ ] `https://saevaexe.github.io/ceyizim/privacy.html` → 200
-- [ ] `https://saevaexe.github.io/ceyizim/privacy-en.html` → 200
-- [ ] `https://saevaexe.github.io/ceyizim/support.html` → 200
-- [ ] `https://saevaexe.github.io/ceyizim/support-en.html` → 200
-- [ ] `https://saevaexe.github.io/ceyizim/terms.html` → 200
-- [ ] `https://saevaexe.github.io/ceyizim/.well-known/apple-app-site-association` → 200, **Content-Type: application/json** dönmeli (GitHub Pages otomatik veriyor)
+- [ ] `https://saevaexe.github.io/ceyizim-web/` → 200, landing yüklendi
+- [ ] `https://saevaexe.github.io/ceyizim-web/privacy.html` → 200
+- [ ] `https://saevaexe.github.io/ceyizim-web/privacy-en.html` → 200
+- [ ] `https://saevaexe.github.io/ceyizim-web/support.html` → 200
+- [ ] `https://saevaexe.github.io/ceyizim-web/support-en.html` → 200
+- [ ] `https://saevaexe.github.io/ceyizim-web/terms.html` → 200
+- [ ] `https://saevaexe.github.io/ceyizim-web/.well-known/apple-app-site-association` → 200, **Content-Type: application/json** dönmeli (GitHub Pages otomatik veriyor)
 - [ ] AASA validator: https://branch.io/resources/aasa-validator/
 
 > **AASA notu:** Apple cache'ler — değişiklik sonrası `swcutil_show` veya cihaz reset gerekebilir. TestFlight'ta ilk kurulumda fresh fetch olur.
