@@ -25,7 +25,7 @@
 <main>
 <article>
 <h1>Gizlilik Politikası</h1>
-<p class="meta">Yürürlük tarihi: 26 Nisan 2026 · Son güncelleme: 28 Nisan 2026</p>
+<p class="meta">Yürürlük tarihi: 26 Nisan 2026 · Son güncelleme: 9 Mayıs 2026</p>
 
 <p>Çeyizim ("uygulama") gizliliğine önem verir. Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve Apple App Privacy gereklilikleri çerçevesinde uygulamada hangi verileri topladığımızı, neden işlediğimizi ve haklarınızı açıklar.</p>
 
@@ -37,7 +37,7 @@
 </ul>
 
 <h2>2. Topladığımız Veriler</h2>
-<p>Uygulama hesapsız çalışacak şekilde tasarlanmıştır. Hesap açtığınız veya aile paylaşımı kullandığınız anda aşağıdaki veriler işlenir:</p>
+<p>Uygulama hesapsız çalışacak şekilde tasarlanmıştır. Hesapsız kullanımda liste verileriniz cihazınızda yerel olarak saklanabilir ve buluta yedeklenmeyebilir. Apple ile giriş yaptığınızda, bulut yedekleme veya aile paylaşımı kullandığınızda aşağıdaki veriler işlenir:</p>
 
 <h3>Hesap bilgileri</h3>
 <ul>
@@ -50,6 +50,7 @@
   <li>Çeyiz listesi: ürün adları, kategoriler, durumlar, fiyatlar (girdiyseniz), notlar</li>
   <li>Yüklediğiniz fotoğraflar (sıkıştırılmış, 1MB altı)</li>
   <li>Aile üyesi davetleri ve rol bilgisi</li>
+  <li>Giriş yaptığınızda listeleriniz Firestore ile yedeklenebilir ve cihazlar arasında geri yüklenebilir.</li>
 </ul>
 
 <h3>Satın alma bilgileri</h3>
@@ -85,6 +86,7 @@
 <h2>5. Veri Saklama Süresi</h2>
 <ul>
   <li>Hesap aktifken: veriler senkron tutulur.</li>
+  <li>Hesapsız kullanımda: yerel veriler cihazınızda kaldığı sürece saklanır; uygulama silinir veya cihaz değiştirilirse buluttan geri yüklenemeyebilir.</li>
   <li>Hesap silme talebinizde: 30 gün içinde tüm bulut verileri silinir. Yedeklerden tam temizlik en fazla 90 gün.</li>
   <li>Anonim analiz verisi: 12 ay sonra otomatik silinir.</li>
   <li>Yasal saklama yükümlülüğü olan veriler (faturalandırma): Apple'ın belirlediği süre.</li>
@@ -110,7 +112,7 @@
 <h2>8. Veri Güvenliği</h2>
 <ul>
   <li>Tüm trafik HTTPS/TLS üzerinden şifrelenir.</li>
-  <li>Yerel veritabanı (SwiftData) iOS'in koruduğu alanda saklanır.</li>
+  <li>Yerel veritabanı (Core Data) iOS'in koruduğu alanda saklanır.</li>
   <li>Firebase Storage erişimi, Firestore Security Rules ile rol bazlı kısıtlanır.</li>
 </ul>
 

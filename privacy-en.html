@@ -25,7 +25,7 @@
 <main>
 <article>
 <h1>Privacy Policy</h1>
-<p class="meta">Effective: April 26, 2026 · Last updated: April 28, 2026</p>
+<p class="meta">Effective: April 26, 2026 · Last updated: May 9, 2026</p>
 
 <p>Çeyizim ("the app") respects your privacy. This document explains what data we collect, why we process it, and what rights you have, in line with Apple's App Privacy requirements, the EU GDPR, and Turkey's KVKK (Law No. 6698 on the Protection of Personal Data).</p>
 
@@ -37,7 +37,7 @@
 </ul>
 
 <h2>2. Data We Collect</h2>
-<p>The app is designed to work without an account. The following data is processed only when you sign up or use family sharing:</p>
+<p>The app is designed to work without an account. If you use it without signing in, list data may remain only on your device and may not be backed up to the cloud. When you sign in with Apple, use cloud backup, or use family sharing, the following data is processed:</p>
 
 <h3>Account information</h3>
 <ul>
@@ -50,6 +50,7 @@
   <li>Trousseau list: item names, categories, statuses, prices (if entered), notes</li>
   <li>Photos you upload (compressed, under 1 MB)</li>
   <li>Family member invites and role assignments</li>
+  <li>When signed in, your lists may be backed up and restored using Firestore.</li>
 </ul>
 
 <h3>Purchase information</h3>
@@ -84,6 +85,7 @@
 <h2>5. Data Retention</h2>
 <ul>
   <li>While account is active: data is kept in sync.</li>
+  <li>Without an account: local data is kept as long as it remains on your device; it may not be recoverable from the cloud if the app is deleted or you switch devices.</li>
   <li>On account deletion request: cloud data deleted within 30 days; full backup purge within 90 days.</li>
   <li>Anonymous analytics: auto-deleted after 12 months.</li>
   <li>Billing records: per Apple's retention policy.</li>
@@ -108,7 +110,7 @@
 <h2>8. Data Security</h2>
 <ul>
   <li>All traffic encrypted via HTTPS/TLS.</li>
-  <li>Local database (SwiftData) protected by iOS Data Protection.</li>
+  <li>Local database (Core Data) protected by iOS Data Protection.</li>
   <li>Firebase Storage and Firestore access guarded by role-based Security Rules.</li>
 </ul>
 
