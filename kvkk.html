@@ -26,7 +26,7 @@
 <main>
 <article>
 <h1>KVKK Aydınlatma Metni</h1>
-<p class="meta">Yürürlük tarihi: 27 Nisan 2026 · Son güncelleme: 9 Mayıs 2026</p>
+<p class="meta">Yürürlük tarihi: 27 Nisan 2026 · Son güncelleme: 29 Eylül 2026</p>
 
 <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (&ldquo;KVKK&rdquo;) madde 10 kapsamında, veri sorumlusu sıfatıyla sizi bilgilendirmek isteriz. Bu metin Çeyizim uygulamasını kullandığınızda hangi kişisel verilerinizin, hangi hukuki sebeple, hangi amaçla ve nasıl işlendiğini özetler.</p>
 
@@ -42,7 +42,7 @@
   <li><strong>Kimlik:</strong> Apple sağlayıcısından alınan ad ve takma ad (opsiyonel)</li>
   <li><strong>İletişim:</strong> E-posta adresi veya Apple Hide My Email relay adresi</li>
   <li><strong>Müşteri işlem:</strong> Abonelik durumu, satın alma geçmişi (Apple/RevenueCat üzerinden)</li>
-  <li><strong>İşlem güvenliği:</strong> IP adresi, oturum kayıtları, cihaz tanıtıcıları (anonim)</li>
+  <li><strong>İşlem güvenliği:</strong> IP adresi, oturum kayıtları, kalıcı kurulum/cihaz tanıtıcısı (ad veya e-posta içermez, ancak kişiye bağlanabilir olduğundan tam anonim sayılmaz)</li>
   <li><strong>Kullanıcı içeriği:</strong> Çeyiz listesi kalemleri, fotoğraflar, aile üyesi davetleri; hesapsız kullanımda cihazda yerel saklanabilir, giriş/aile paylaşımı kullanıldığında Firebase servisleriyle senkronize edilebilir</li>
   <li><strong>Pazarlama (toplanmaz):</strong> IDFA, reklam tanıtıcı verisi toplanmaz</li>
 </ul>
@@ -51,8 +51,8 @@
 <ul>
   <li>Uygulama ve aile paylaşımı işlevlerinin yürütülmesi</li>
   <li>Premium abonelik haklarının doğrulanması</li>
-  <li>Kötüye kullanım, hata ve kilitlenme tespiti</li>
-  <li>Anonim ürün analizi ile uygulamanın iyileştirilmesi</li>
+  <li>Kötüye kullanım ve hata tespiti (uygulamada etkin bir kilitlenme raporlama akışı yoktur)</li>
+  <li>Ürün kullanım analizi ile uygulamanın iyileştirilmesi</li>
   <li>Mevzuattan kaynaklanan saklama yükümlülükleri</li>
 </ul>
 
@@ -69,7 +69,7 @@
 <ul>
   <li><strong>Firebase (Google LLC, ABD):</strong> Kimlik doğrulama, veritabanı, fotoğraf depolama, push bildirim</li>
   <li><strong>RevenueCat (ABD):</strong> Abonelik yönetimi</li>
-  <li><strong>PostHog (Avrupa Birliği — Frankfurt):</strong> Anonim ürün analizi</li>
+  <li><strong>PostHog (Avrupa Birliği — Frankfurt):</strong> Ürün analizi (autocapture ve session replay kapalı)</li>
   <li><strong>Apple:</strong> App Store satın alma, Sign in with Apple, APNs</li>
 </ul>
 <p>Aktarımlar KVKK madde 9 kapsamında, ilgili sağlayıcıların standart sözleşme güvenceleri altında gerçekleşir.</p>
@@ -81,8 +81,8 @@
 <ul>
   <li>Hesap aktif olduğu sürece veriler işlenir.</li>
   <li>Hesapsız kullanımda yerel veriler cihazınızda kaldığı sürece saklanır; uygulama silindiğinde veya cihaz değiştirildiğinde silinebilir.</li>
-  <li>Hesap silme talebinizden sonra 30 gün içinde bulut verileri silinir; yedeklerden tam imha 90 günü geçmez.</li>
-  <li>Anonim analiz verisi 12 ayda otomatik silinir.</li>
+  <li>Hesap silme talebinizden sonra silinen kapsamdaki bulut verileri 30 gün içinde silinir; yedeklerden tam imha 90 günü geçmez. Yüklediğiniz fotoğraflar ve başkasının listesinde bıraktığınız kayıtlar bu otomatik kapsamın dışındadır; talep üzerine elle kaldırılır (<a href="delete-account.html">ayrıntı</a>).</li>
+  <li>Ürün analizi verisi 12 ayda otomatik silinir.</li>
   <li>Faturalandırma kayıtları, mevzuat gereği Apple tarafından belirlenen süre boyunca saklanır.</li>
 </ul>
 

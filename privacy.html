@@ -25,7 +25,7 @@
 <main>
 <article>
 <h1>Gizlilik Politikası</h1>
-<p class="meta">Yürürlük tarihi: 26 Nisan 2026 · Son güncelleme: 9 Mayıs 2026</p>
+<p class="meta">Yürürlük tarihi: 26 Nisan 2026 · Son güncelleme: 29 Eylül 2026</p>
 
 <p>Çeyizim ("uygulama") gizliliğine önem verir. Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve Apple App Privacy gereklilikleri çerçevesinde uygulamada hangi verileri topladığımızı, neden işlediğimizi ve haklarınızı açıklar.</p>
 
@@ -50,27 +50,28 @@
   <li>Çeyiz listesi: ürün adları, kategoriler, durumlar, fiyatlar (girdiyseniz), notlar</li>
   <li>Yüklediğiniz fotoğraflar (sıkıştırılmış, 1MB altı)</li>
   <li>Aile üyesi davetleri ve rol bilgisi</li>
+  <li>Bize e-posta ile yazdığınızda destek yazışmanızın içeriği ve gönderdiğiniz iletişim bilgisi</li>
   <li>Giriş yaptığınızda listeleriniz Firestore ile yedeklenebilir ve cihazlar arasında geri yüklenebilir.</li>
 </ul>
 
 <h3>Satın alma bilgileri</h3>
 <ul>
-  <li>Premium abonelik durumu, plan tipi (RevenueCat üzerinden)</li>
+  <li>Premium abonelik durumu, plan tipi ve satın alma geçmişi (RevenueCat üzerinden); satın alma sonucu ayrıca ürün analizinde kullanılır</li>
   <li>Ödeme bilgileriniz Apple tarafından işlenir; biz kart bilgilerinize erişmeyiz.</li>
 </ul>
 
 <h3>Kullanım ve teşhis verileri</h3>
 <ul>
-  <li>Anonim olay verisi (hangi ekranlar ziyaret edildi, hangi aksiyonlar alındı) — PostHog EU üzerinden</li>
-  <li>Kilitlenme (crash) raporları</li>
-  <li>Reklam izleme yapmıyoruz. IDFA toplamıyoruz.</li>
+  <li>Ürün kullanım olayları (hangi ekranlar ziyaret edildi, hangi aksiyonlar alındı) — PostHog EU üzerinden. Bu olaylar ad, e-posta veya liste içeriği taşımaz; ancak kalıcı bir kurulum/cihaz tanıtıcısıyla gönderildiği için tam anonim sayılmaz.</li>
+  <li>Uygulamada etkin bir kilitlenme (crash) raporlama akışı yok: PostHog hata yakalama kapalıdır ve Crashlytics benzeri bir çökme SDK'sı eklenmemiştir. Firebase SDK'ları kendi teknik tanılama verisini gönderebilir.</li>
+  <li>Reklam izleme yapmıyoruz. IDFA toplamıyoruz. Reklam SDK'sı ve ATT izni isteği yok.</li>
 </ul>
 
 <h2>3. Verileri Neden İşliyoruz</h2>
 <ul>
   <li><strong>Uygulama işlevselliği:</strong> Liste senkronizasyonu, aile paylaşımı, fotoğraf depolama, abonelik yönetimi.</li>
   <li><strong>Güvenlik:</strong> Kötüye kullanım tespiti, hesap doğrulama.</li>
-  <li><strong>Ürün geliştirme:</strong> Anonim kullanım analizleri, hangi özelliklerin işe yaradığını anlamak.</li>
+  <li><strong>Ürün geliştirme:</strong> Kullanım analizleri, hangi özelliklerin işe yaradığını anlamak.</li>
   <li><strong>Yasal yükümlülükler:</strong> Faturalandırma kayıtları (Apple aracılığıyla).</li>
 </ul>
 
@@ -79,7 +80,7 @@
 <ul>
   <li><strong>Firebase (Google LLC):</strong> Authentication, Firestore (veritabanı), Storage (fotoğraflar), Cloud Messaging (bildirimler). <a href="https://firebase.google.com/support/privacy">Firebase Gizlilik</a></li>
   <li><strong>RevenueCat:</strong> Abonelik yönetimi, anonim cihaz kimliği. <a href="https://www.revenuecat.com/privacy">RevenueCat Gizlilik</a></li>
-  <li><strong>PostHog (EU Cloud):</strong> Anonim ürün analizi. Veriler AB'de barındırılır. Autocapture ve session replay açık değildir. <a href="https://posthog.com/privacy">PostHog Gizlilik</a></li>
+  <li><strong>PostHog (EU Cloud):</strong> Ürün analizi. Veriler AB'de (Frankfurt) barındırılır. Autocapture ve session replay açık değildir. <a href="https://posthog.com/privacy">PostHog Gizlilik</a></li>
   <li><strong>Apple:</strong> App Store satın alma, Sign in with Apple, push notification servisi.</li>
 </ul>
 
@@ -87,8 +88,8 @@
 <ul>
   <li>Hesap aktifken: veriler senkron tutulur.</li>
   <li>Hesapsız kullanımda: yerel veriler cihazınızda kaldığı sürece saklanır; uygulama silinir veya cihaz değiştirilirse buluttan geri yüklenemeyebilir.</li>
-  <li>Hesap silme talebinizde: 30 gün içinde tüm bulut verileri silinir. Yedeklerden tam temizlik en fazla 90 gün.</li>
-  <li>Anonim analiz verisi: 12 ay sonra otomatik silinir.</li>
+  <li>Hesap silme talebinizde: silinen kapsamdaki bulut verileri 30 gün içinde kaldırılır, yedeklerden tam temizlik en fazla 90 gün sürer. Bu kapsam bugün her şeyi içermiyor — yüklediğiniz fotoğraflar ve başkasının listesinde bıraktığınız kayıtlar şu an otomatik silinmiyor. Neyin silinip neyin kaldığı: <a href="delete-account.html">Hesap ve Veri Silme</a>.</li>
+  <li>Ürün analizi verisi: 12 ay sonra otomatik silinir.</li>
   <li>Yasal saklama yükümlülüğü olan veriler (faturalandırma): Apple'ın belirlediği süre.</li>
 </ul>
 
@@ -104,7 +105,7 @@
   <li>Düzeltme/silme işleminin verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme</li>
   <li>Aleyhe bir sonucun ortaya çıkmasına itiraz etme</li>
 </ul>
-<p>Bu haklarınızı kullanmak için <a href="mailto:osman.seven97@icloud.com">osman.seven97@icloud.com</a> adresine yazabilirsiniz. Talebiniz en geç 30 gün içinde yanıtlanır.</p>
+<p>Bu haklarınızı kullanmak için <a href="mailto:osman.seven97@icloud.com">osman.seven97@icloud.com</a> adresine yazabilirsiniz. Talebiniz en geç 30 gün içinde yanıtlanır. Hesabınızı ve verilerinizi silmenin uygulama içi ve e-posta yolları: <a href="delete-account.html">Hesap ve Veri Silme</a>.</p>
 
 <h2>7. Çocuk Politikası</h2>
 <p>Çeyizim 4+ yaş için derecelendirilmiştir, ancak hedef kitle 18+ kullanıcılardır. 13 yaş altı kullanıcılardan bilerek veri toplamayız. Çocuğunuzun veri gönderdiğini düşünüyorsanız <a href="mailto:osman.seven97@icloud.com">bizimle iletişime geçin</a>.</p>

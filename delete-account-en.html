@@ -25,18 +25,18 @@
 <main>
 <article>
 <h1>Account &amp; Data Deletion</h1>
-<p class="meta">Çeyizim (developer: Osman Seven) · Last updated: May 23, 2026</p>
+<p class="meta">Çeyizim (developer: Osman Seven) · Last updated: 29 September 2026</p>
 
 <p>You can delete your Çeyizim account and all associated data at any time. There are two ways: from within the app, or by sending a request via email.</p>
 
 <h2>Option 1 — From within the app (recommended)</h2>
 <ol>
   <li>Open the Çeyizim app.</li>
-  <li>Go to <strong>Profile → Settings</strong>.</li>
-  <li>Tap <strong>Delete Account</strong>.</li>
-  <li>Confirm on the confirmation screen.</li>
+  <li>On Home, tap the <strong>⚙️</strong> icon at the top right to open <strong>Settings</strong>.</li>
+  <li>Under &ldquo;Legal &amp; Account&rdquo;, tap <strong>Delete Account</strong>.</li>
+  <li>Confirm on the confirmation screen. You may be asked to re-authenticate with Apple for security.</li>
 </ol>
-<p class="callout">If you only want to sign out, choose "Log Out" instead — your data is kept in that case. "Delete Account" cannot be undone.</p>
+<p class="callout">&ldquo;Delete Account&rdquo; appears only while you are signed in with Apple, and it cannot be undone. If you only want to sign out, choose &ldquo;Log Out&rdquo; instead — your data is kept in that case.</p>
 
 <h2>Option 2 — Request by email</h2>
 <p>If you cannot access the app, email us to delete your account:
@@ -46,28 +46,37 @@ Send the request from the email address associated with your account. After veri
 <h2>Deleting individual data without deleting your account</h2>
 <p>If you don't want to delete your whole account, you can delete specific data from within the app:</p>
 <ul>
-  <li><strong>Item:</strong> Tap the item in a list → Delete.</li>
-  <li><strong>Photo:</strong> In item detail, tap the photo → Remove.</li>
-  <li><strong>List:</strong> Delete the list from list settings.</li>
+  <li><strong>Item:</strong> In item detail, tap <strong>Delete Item</strong>.</li>
+  <li><strong>Photo:</strong> In item detail, tap the ✕ at the top right of the photo to remove it.</li>
+  <li><strong>Someone else's list:</strong> If you are a member of a list you don't own, Settings → <strong>Leave List</strong> ends your membership.</li>
 </ul>
-<p>These actions remove the relevant data from the server while keeping your account active.</p>
+<p>These actions remove the relevant data from the server while keeping your account active. There is no separate option that deletes a list you own on its own; a list you own is removed together with account deletion.</p>
 
 <h2>Data that is deleted</h2>
 <p>When you request account deletion, the following data is permanently deleted:</p>
 <ul>
   <li>Your account and sign-in details (name, email address)</li>
-  <li>Your trousseau lists and all items in them</li>
-  <li>Item photos you uploaded</li>
-  <li>Your budget data and notes</li>
-  <li>Your activity feed records</li>
-  <li>Your family memberships and invite links</li>
+  <li>Trousseau lists <strong>you own</strong>, and all items in them</li>
+  <li>Budget data and notes in the lists you own</li>
+  <li>Activity feed records in the lists you own</li>
+  <li>Your membership in someone else's list</li>
+  <li>The invite codes you created</li>
 </ul>
+
+<div class="callout">
+  <p><strong>What is not deleted yet.</strong> We spell this out because &ldquo;everything is gone&rdquo; would not be true:</p>
+  <ul>
+    <li><strong>Photos you uploaded.</strong> Item photos live in Firebase Storage, and the account deletion flow does not currently remove those files. If you want them gone, email us at the address below and we will remove them by hand.</li>
+    <li><strong>Traces you left in someone else's list.</strong> Items you added to a partner's or a family member's list, your activity records there, and photos you uploaded to it belong to that list's owner, so they are not removed when your account is deleted. The list owner can delete them — or write to us.</li>
+  </ul>
+  <p>We are working on closing these gaps. Until then, the email route is the reliable way to get a complete cleanup.</p>
+</div>
 
 <h2>Data that is kept and retention periods</h2>
 <ul>
-  <li><strong>Deletion timeline:</strong> Your data is permanently deleted from our servers (Firebase) <strong>within 30 days</strong> of confirmation.</li>
-  <li><strong>Purchase / subscription records:</strong> Your subscriptions are processed by the Apple App Store, Google Play and RevenueCat. Due to legal and accounting obligations, these transaction records may be retained by those platforms, outside our control, for a period of time. To cancel an active subscription, use your device's subscription settings.</li>
-  <li><strong>Anonymous diagnostics:</strong> Aggregated, non-identifiable crash and usage statistics may remain in anonymous form after deletion.</li>
+  <li><strong>Deletion timeline:</strong> The data listed above as deleted is permanently removed from our servers (Firebase) <strong>within 30 days</strong> of confirmation.</li>
+  <li><strong>Purchase / subscription records:</strong> Your subscriptions are processed by the Apple App Store and RevenueCat. Due to legal and accounting obligations, these transaction records may be retained by those platforms, outside our control, for a period of time. To cancel an active subscription, use your Apple ID subscription settings.</li>
+  <li><strong>Aggregated usage statistics:</strong> Aggregated, non-identifiable product usage statistics may remain after deletion. The app has no active crash-reporting flow.</li>
 </ul>
 
 <p>For details about our privacy practices, see our <a href="privacy-en.html">Privacy Policy</a>. If you run into any issues, reach us at <a href="mailto:osman.seven97@icloud.com">osman.seven97@icloud.com</a>.</p>

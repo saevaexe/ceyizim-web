@@ -25,7 +25,7 @@
 <main>
 <article>
 <h1>Privacy Policy</h1>
-<p class="meta">Effective: April 26, 2026 · Last updated: May 9, 2026</p>
+<p class="meta">Effective: April 26, 2026 · Last updated: 29 September 2026</p>
 
 <p>Çeyizim ("the app") respects your privacy. This document explains what data we collect, why we process it, and what rights you have, in line with Apple's App Privacy requirements, the EU GDPR, and Turkey's KVKK (Law No. 6698 on the Protection of Personal Data).</p>
 
@@ -50,27 +50,28 @@
   <li>Trousseau list: item names, categories, statuses, prices (if entered), notes</li>
   <li>Photos you upload (compressed, under 1 MB)</li>
   <li>Family member invites and role assignments</li>
+  <li>The contents of your support emails and the contact details you send with them</li>
   <li>When signed in, your lists may be backed up and restored using Firestore.</li>
 </ul>
 
 <h3>Purchase information</h3>
 <ul>
-  <li>Premium subscription state and plan type (via RevenueCat)</li>
+  <li>Premium subscription state, plan type and purchase history (via RevenueCat); the purchase outcome is also used in product analytics</li>
   <li>Payment data is processed by Apple; we never see your card information.</li>
 </ul>
 
 <h3>Usage and diagnostics</h3>
 <ul>
-  <li>Anonymous event data (which screens were visited, which actions were taken) via PostHog EU</li>
-  <li>Crash reports</li>
-  <li>No advertising tracking. We do not collect IDFA.</li>
+  <li>Product usage events (which screens were visited, which actions were taken) via PostHog EU. These events carry no name, email address or list content, but they are sent with a persistent installation/device identifier, so they are not fully anonymous.</li>
+  <li>There is no active crash-reporting flow in the app: PostHog error tracking is off and no crash SDK such as Crashlytics is included. Firebase SDKs may send their own technical diagnostic data.</li>
+  <li>No advertising tracking. We do not collect IDFA. No ad SDK and no ATT prompt.</li>
 </ul>
 
 <h2>3. Why We Process Data</h2>
 <ul>
   <li><strong>App functionality:</strong> List sync, family sharing, photo storage, subscription management.</li>
   <li><strong>Security:</strong> Abuse detection, account verification.</li>
-  <li><strong>Product improvement:</strong> Anonymous usage analytics to understand which features work.</li>
+  <li><strong>Product improvement:</strong> Usage analytics to understand which features work.</li>
   <li><strong>Legal obligations:</strong> Billing records (via Apple).</li>
 </ul>
 
@@ -78,7 +79,7 @@
 <ul>
   <li><strong>Firebase (Google LLC):</strong> Authentication, Firestore (database), Storage (photos), Cloud Messaging (notifications). <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a></li>
   <li><strong>RevenueCat:</strong> Subscription management, anonymous device ID. <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy</a></li>
-  <li><strong>PostHog (EU Cloud):</strong> Anonymous product analytics. Data hosted in the EU. Autocapture and session replay are explicitly disabled. <a href="https://posthog.com/privacy">PostHog Privacy</a></li>
+  <li><strong>PostHog (EU Cloud):</strong> Product analytics. Data hosted in the EU (Frankfurt). Autocapture and session replay are explicitly disabled. <a href="https://posthog.com/privacy">PostHog Privacy</a></li>
   <li><strong>Apple:</strong> App Store purchases, Sign in with Apple, push notification service.</li>
 </ul>
 
@@ -86,8 +87,8 @@
 <ul>
   <li>While account is active: data is kept in sync.</li>
   <li>Without an account: local data is kept as long as it remains on your device; it may not be recoverable from the cloud if the app is deleted or you switch devices.</li>
-  <li>On account deletion request: cloud data deleted within 30 days; full backup purge within 90 days.</li>
-  <li>Anonymous analytics: auto-deleted after 12 months.</li>
+  <li>On account deletion request: cloud data within the deleted scope is removed within 30 days, and purged from backups within 90 days. That scope is not yet everything — photos you uploaded and records you left in someone else's list are not deleted automatically today. What goes and what stays: <a href="delete-account-en.html">Account &amp; Data Deletion</a>.</li>
+  <li>Product analytics data: auto-deleted after 12 months.</li>
   <li>Billing records: per Apple's retention policy.</li>
 </ul>
 
@@ -102,7 +103,7 @@
   <li>Withdraw consent at any time</li>
   <li>Lodge a complaint with a supervisory authority (in TR: KVKK Kurumu; in EU: your national DPA)</li>
 </ul>
-<p>To exercise these rights, email <a href="mailto:osman.seven97@icloud.com">osman.seven97@icloud.com</a>. We respond within 30 days.</p>
+<p>To exercise these rights, email <a href="mailto:osman.seven97@icloud.com">osman.seven97@icloud.com</a>. We respond within 30 days. In-app and email routes for deleting your account and data: <a href="delete-account-en.html">Account &amp; Data Deletion</a>.</p>
 
 <h2>7. Children</h2>
 <p>The app is rated 4+ but the target audience is 18+. We do not knowingly collect data from children under 13. If you believe a child has provided data, please <a href="mailto:osman.seven97@icloud.com">contact us</a>.</p>

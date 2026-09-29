@@ -1,195 +1,326 @@
+/* Çeyizim — site stilleri
+   Tipografi mağaza görselleriyle aynı: Fraunces başlık, DM Sans metin. */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap");
+
 :root {
-  --pink: #f7d6e0;
-  --pink-soft: #fdf1f5;
-  --lila: #c8a2c8;
-  --lila-deep: #8e6fa3;
-  --gold: #d4a373;
-  --ink: #2b2531;
-  --ink-soft: #5a4f63;
-  --bg: #fffaf7;
-  --line: #ece2e8;
-  --max: 760px;
-  --radius: 14px;
+  --blush:        #F6D9E2;
+  --blush-soft:   #FDF3F6;
+  --lila:         #C9A6CE;
+  --lila-deep:    #8A5F91;
+  --rose-deep:    #A8355C;
+  --gold:         #C8965E;
+
+  --ink:          #241E28;
+  --ink-soft:     #5D5265;
+  --ink-faint:    #8B8091;
+
+  --bg:           #FFFBF9;
+  --surface:      #FFFFFF;
+  --line:         #EDE1E7;
+  --line-soft:    #F4EBEF;
+
+  --max: 720px;
+  --radius: 16px;
+  --shadow: 0 1px 2px rgba(36,30,40,.04), 0 12px 32px -20px rgba(36,30,40,.28);
+
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
+  --body: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --blush:      #3A2630;
+    --blush-soft: #241B21;
+    --lila:       #8A6F92;
+    --lila-deep:  #D8AEDE;
+    --rose-deep:  #F0A0BE;
+    --gold:       #D9AE7C;
+
+    --ink:        #F1E9EE;
+    --ink-soft:   #BCAEC3;
+    --ink-faint:  #8B7F92;
+
+    --bg:         #16121A;
+    --surface:    #1E1922;
+    --line:       #332A38;
+    --line-soft:  #272030;
+
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 12px 32px -20px rgba(0,0,0,.9);
+  }
 }
 
 * { box-sizing: border-box; }
 
-html, body {
+html { -webkit-text-size-adjust: 100%; }
+
+body {
   margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--body);
   font-size: 17px;
-  line-height: 1.6;
+  line-height: 1.65;
   color: var(--ink);
   background: var(--bg);
+  -webkit-font-smoothing: antialiased;
 }
+
+/* ---------- links ---------- */
 
 a {
   color: var(--lila-deep);
   text-decoration: none;
-  border-bottom: 1px solid rgba(142, 111, 163, 0.25);
+  border-bottom: 1px solid color-mix(in srgb, var(--lila-deep) 30%, transparent);
+  transition: border-color .15s ease, color .15s ease;
 }
 a:hover { border-bottom-color: var(--lila-deep); }
+a:focus-visible {
+  outline: 2px solid var(--rose-deep);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* ---------- header ---------- */
 
 header {
-  background: linear-gradient(180deg, var(--pink-soft) 0%, var(--bg) 100%);
-  border-bottom: 1px solid var(--line);
+  background: linear-gradient(180deg, var(--blush-soft) 0%, var(--bg) 100%);
+  border-bottom: 1px solid var(--line-soft);
 }
 
 .nav {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 18px 22px;
+  padding: 20px 22px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 18px;
+  flex-wrap: wrap;
 }
 
 .brand {
-  font-weight: 700;
-  font-size: 19px;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 22px;
   color: var(--ink);
   border: none;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
 }
-
-.brand span { color: var(--lila-deep); }
+.brand span { color: var(--rose-deep); }
+.brand:hover { border: none; }
 
 .nav ul {
   list-style: none;
   display: flex;
-  gap: 18px;
+  gap: 20px;
   margin: 0;
   padding: 0;
   font-size: 15px;
 }
+.nav ul a { border: none; color: var(--ink-soft); font-weight: 500; }
+.nav ul a:hover { color: var(--rose-deep); }
 
-.nav ul a { border: none; color: var(--ink-soft); }
-.nav ul a:hover { color: var(--lila-deep); }
+.lang { font-size: 14px; color: var(--ink-faint); font-variant-numeric: tabular-nums; }
+.lang a { border: none; padding: 0 6px; color: var(--ink-faint); }
+.lang a:hover { color: var(--rose-deep); }
+.lang .active { color: var(--rose-deep); font-weight: 700; }
 
-.lang {
-  font-size: 14px;
-  color: var(--ink-soft);
-}
-.lang a { border: none; padding: 0 6px; }
-.lang .active { color: var(--lila-deep); font-weight: 600; }
+/* ---------- layout ---------- */
 
 main {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 40px 22px 80px;
+  padding: 44px 22px 88px;
 }
 
-.hero {
-  text-align: center;
-  padding: 50px 0 30px;
-}
+/* ---------- hero (index) ---------- */
+
+.hero { text-align: center; padding: 44px 0 26px; }
 
 .hero h1 {
-  font-size: 38px;
-  line-height: 1.15;
-  margin: 0 0 14px;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(34px, 7vw, 46px);
+  line-height: 1.1;
+  margin: 0 0 16px;
   letter-spacing: -0.02em;
+  text-wrap: balance;
 }
 
 .hero p.lede {
   font-size: 19px;
+  line-height: 1.6;
   color: var(--ink-soft);
-  margin: 0 auto 28px;
+  margin: 0 auto 30px;
   max-width: 540px;
+  text-wrap: pretty;
 }
 
-.badge {
+.badge { display: inline-block; margin-top: 10px; }
+.badge a { border: none; }
+.badge img { height: 52px; width: auto; }
+
+/* Apple'ın resmi rozeti assets/ içine konulana kadarki metin düğmesi.
+   Rozeti kendimiz çizemeyiz — Apple Identity Guidelines yalnız Apple'ın
+   sağladığı SVG/PNG'nin kullanılmasına izin veriyor. */
+.store-link {
   display: inline-block;
-  margin: 12px 0 0;
+  padding: 13px 28px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--bg);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.005em;
+  border: none;
+  box-shadow: var(--shadow);
 }
-.badge img { height: 50px; }
+.store-link:hover { background: var(--rose-deep); color: #fff; border: none; }
 
 .shots {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 14px;
-  padding: 24px 0;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  padding: 28px 0;
 }
 .shots img {
   width: 100%;
+  max-width: 100%;
   border-radius: var(--radius);
-  box-shadow: 0 8px 24px rgba(43, 37, 49, 0.08);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line-soft);
+}
+
+/* ---------- typography ---------- */
+
+h1 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(29px, 5.5vw, 36px);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 10px;
+  text-wrap: balance;
 }
 
 h2 {
-  font-size: 22px;
-  margin-top: 36px;
-  margin-bottom: 10px;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 1.25;
+  letter-spacing: -0.012em;
   color: var(--ink);
-  letter-spacing: -0.01em;
+  margin: 44px 0 12px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line-soft);
+  text-wrap: balance;
 }
+article > h2:first-of-type { border-top: none; padding-top: 0; margin-top: 34px; }
 
 h3 {
-  font-size: 17px;
-  margin-top: 22px;
-  margin-bottom: 6px;
-  color: var(--lila-deep);
+  font-family: var(--body);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: var(--rose-deep);
+  margin: 26px 0 6px;
 }
 
 p, li { color: var(--ink); }
-li { margin: 6px 0; }
+article p, article li, article dd { color: var(--ink-soft); }
+article p { margin: 0 0 14px; text-wrap: pretty; }
 
-article p, article li {
-  color: var(--ink-soft);
-}
+ul, ol { padding-left: 22px; margin: 0 0 16px; }
+li { margin: 7px 0; }
+li::marker { color: var(--lila); }
+ol li::marker { color: var(--ink-faint); font-variant-numeric: tabular-nums; }
+
+strong { color: var(--ink); font-weight: 700; }
 
 .meta {
   font-size: 14px;
-  color: var(--ink-soft);
-  margin-top: 4px;
-  margin-bottom: 24px;
+  color: var(--ink-faint);
+  margin: 0 0 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line-soft);
 }
+
+/* ---------- callout ---------- */
 
 .callout {
-  background: var(--pink-soft);
+  background: var(--blush-soft);
+  border: 1px solid var(--line);
   border-left: 3px solid var(--gold);
-  padding: 14px 18px;
-  border-radius: 8px;
-  margin: 18px 0;
-  font-size: 15px;
+  padding: 16px 20px;
+  border-radius: 4px var(--radius) var(--radius) 4px;
+  margin: 22px 0;
+  font-size: 15.5px;
+  line-height: 1.6;
   color: var(--ink-soft);
 }
+.callout > :first-child { margin-top: 0; }
+.callout > :last-child { margin-bottom: 0; }
+.callout p { color: var(--ink-soft); margin: 0 0 10px; }
+.callout ul { margin: 10px 0; }
+.callout li { color: var(--ink-soft); margin: 8px 0; }
+.callout strong { color: var(--ink); }
+
+/* ---------- FAQ ---------- */
+
+.faq { margin: 0; }
+.faq dt {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 18.5px;
+  letter-spacing: -0.008em;
+  margin-top: 30px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line-soft);
+  color: var(--ink);
+}
+.faq dt:first-of-type { border-top: none; padding-top: 0; margin-top: 14px; }
+.faq dd {
+  margin: 8px 0 0;
+  color: var(--ink-soft);
+  text-wrap: pretty;
+}
+
+/* ---------- footer ---------- */
 
 footer {
-  border-top: 1px solid var(--line);
-  background: var(--pink-soft);
-  margin-top: 60px;
+  border-top: 1px solid var(--line-soft);
+  background: var(--blush-soft);
+  margin-top: 72px;
 }
 
 footer .inner {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 24px 22px;
+  padding: 28px 22px;
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
   justify-content: space-between;
+  align-items: center;
   font-size: 14px;
-  color: var(--ink-soft);
+  color: var(--ink-faint);
 }
+footer a { color: var(--ink-faint); border: none; }
+footer a:hover { color: var(--rose-deep); }
 
-footer a { color: var(--ink-soft); border: none; }
-footer a:hover { color: var(--lila-deep); }
-
-.faq dt {
-  font-weight: 600;
-  margin-top: 18px;
-  color: var(--ink);
-}
-.faq dd {
-  margin: 4px 0 12px;
-  color: var(--ink-soft);
-}
+/* ---------- responsive ---------- */
 
 @media (max-width: 600px) {
-  .hero h1 { font-size: 30px; }
+  body { font-size: 16px; }
+  .nav { padding: 16px 18px; gap: 12px; }
+  .nav ul { gap: 15px; font-size: 14.5px; }
+  main { padding: 30px 18px 64px; }
+  .hero { padding: 26px 0 18px; }
   .hero p.lede { font-size: 17px; }
-  main { padding: 24px 18px 60px; }
+  h2 { font-size: 21px; margin-top: 36px; }
+  .faq dt { font-size: 17.5px; }
+  .callout { padding: 14px 16px; font-size: 15px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
 }

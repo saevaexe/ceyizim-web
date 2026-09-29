@@ -25,18 +25,18 @@
 <main>
 <article>
 <h1>Hesap ve Veri Silme</h1>
-<p class="meta">Çeyizim (geliştirici: Osman Seven) · Son güncelleme: 23 Mayıs 2026</p>
+<p class="meta">Çeyizim (geliştirici: Osman Seven) · Son güncelleme: 29 Eylül 2026</p>
 
 <p>Çeyizim hesabını ve ilişkili tüm verilerini istediğin zaman silebilirsin. İki yol var: uygulama içinden veya e-postayla talep ederek.</p>
 
 <h2>Yöntem 1 — Uygulama içinden (önerilen)</h2>
 <ol>
   <li>Çeyizim uygulamasını aç.</li>
-  <li><strong>Profil → Ayarlar</strong> ekranına git.</li>
-  <li><strong>Hesabı Sil</strong>'e dokun.</li>
-  <li>Onay ekranında işlemi onayla.</li>
+  <li>Ana Sayfa'da sağ üstteki <strong>⚙️</strong> simgesine dokunup <strong>Ayarlar</strong> ekranını aç.</li>
+  <li>&ldquo;Yasal ve Hesap&rdquo; bölümündeki <strong>Hesabı Sil</strong>'e dokun.</li>
+  <li>Onay ekranında işlemi onayla. Güvenlik için Apple ile yeniden doğrulama istenebilir.</li>
 </ol>
-<p class="callout">Sadece çıkış yapmak istiyorsan "Çıkış Yap"'ı seç — bu durumda verilerin korunur. "Hesabı Sil" geri alınamaz.</p>
+<p class="callout">&ldquo;Hesabı Sil&rdquo; yalnızca Apple ile giriş yapmışken görünür ve geri alınamaz. Sadece çıkış yapmak istiyorsan &ldquo;Çıkış Yap&rdquo;ı seç — bu durumda verilerin korunur.</p>
 
 <h2>Yöntem 2 — E-posta ile talep</h2>
 <p>Uygulamaya erişemiyorsan, hesabını silmek için bize yaz:
@@ -46,28 +46,37 @@ Talebini, hesabınla ilişkili e-posta adresinden gönder. Kimliğini doğrulad�
 <h2>Hesabını silmeden tek tek veri silme</h2>
 <p>Tüm hesabını silmek istemiyorsan, belirli verileri uygulama içinden tek tek silebilirsin:</p>
 <ul>
-  <li><strong>Ürün:</strong> Listede ürüne dokun → Sil.</li>
-  <li><strong>Fotoğraf:</strong> Ürün detayında fotoğrafa dokun → Kaldır.</li>
-  <li><strong>Liste:</strong> Liste ayarlarından listeyi sil.</li>
+  <li><strong>Ürün:</strong> Ürün detayında <strong>Ürünü Sil</strong>.</li>
+  <li><strong>Fotoğraf:</strong> Ürün detayında fotoğrafın sağ üst köşesindeki ✕ ile kaldır.</li>
+  <li><strong>Başkasının listesi:</strong> Sahibi olmadığın bir listedeysen Ayarlar → <strong>Listeden Çık</strong> ile üyeliğini sonlandırabilirsin.</li>
 </ul>
-<p>Bu işlemler ilgili veriyi sunucudan kaldırır; hesabın açık kalır.</p>
+<p>Bu işlemler ilgili veriyi sunucudan kaldırır; hesabın açık kalır. Sahibi olduğun listeyi tek başına silen ayrı bir seçenek yok; sahibin listesi hesap silme ile birlikte kaldırılır.</p>
 
 <h2>Silinen veriler</h2>
 <p>Hesap silme talebinde aşağıdaki veriler kalıcı olarak silinir:</p>
 <ul>
   <li>Hesabın ve giriş bilgilerin (ad, e-posta adresi)</li>
-  <li>Çeyiz listelerin ve listelerindeki tüm ürünler</li>
-  <li>Yüklediğin ürün fotoğrafları</li>
-  <li>Bütçe bilgilerin ve notların</li>
-  <li>Aktivite akışı kayıtların</li>
-  <li>Aile üyeliklerin ve davet bağlantıların</li>
+  <li><strong>Sahibi olduğun</strong> çeyiz listeleri ve içlerindeki tüm ürünler</li>
+  <li>Sahibi olduğun listelerdeki bütçe bilgileri ve notlar</li>
+  <li>Sahibi olduğun listelerin aktivite akışı kayıtları</li>
+  <li>Başkasının listesindeki üyeliğin</li>
+  <li>Oluşturduğun davet kodları</li>
 </ul>
+
+<div class="callout">
+  <p><strong>Şu anda silinmeyenler.</strong> Bunları açıkça yazıyoruz, çünkü &ldquo;her şey silindi&rdquo; demek doğru olmaz:</p>
+  <ul>
+    <li><strong>Yüklediğin fotoğraflar.</strong> Ürün fotoğrafları Firebase Storage'da tutulur ve hesap silme akışı şu an Storage'daki dosyaları kaldırmaz. Silinmelerini istiyorsan aşağıdaki adresten yaz, elle kaldıralım.</li>
+    <li><strong>Başkasının listesinde bıraktığın izler.</strong> Eşinin ya da ailenin listesine eklediğin ürünler, oradaki aktivite kayıtların ve o listeye yüklediğin fotoğraflar, liste sahibinin verisi olduğu için hesabın silinince kaldırılmaz. Bunların silinmesini o listenin sahibi yapabilir; ya da bize yaz.</li>
+  </ul>
+  <p>Bu eksikleri kapatmak üzerinde çalışıyoruz. O zamana kadar tam temizlik istiyorsan e-posta yolu en güvenilir yol.</p>
+</div>
 
 <h2>Saklanan veriler ve süreler</h2>
 <ul>
-  <li><strong>Silme süresi:</strong> Verilerin onay sonrası <strong>30 gün içinde</strong> sunucularımızdan (Firebase) kalıcı olarak silinir.</li>
-  <li><strong>Satın alma / abonelik kayıtları:</strong> Aboneliklerin Apple App Store, Google Play ve RevenueCat tarafından işlenir. Yasal ve muhasebe yükümlülükleri gereği bu işlem kayıtları ilgili platformlarda bizim kontrolümüz dışında bir süre tutulabilir. Aktif aboneliğini iptal etmek için cihazının abonelik ayarlarını kullan.</li>
-  <li><strong>Anonim teşhis verileri:</strong> Kişiyle ilişkilendirilemeyen toplu kilitlenme ve kullanım istatistikleri silme sonrası anonim biçimde kalabilir.</li>
+  <li><strong>Silme süresi:</strong> Yukarıda silindiği belirtilen veriler, onay sonrası <strong>30 gün içinde</strong> sunucularımızdan (Firebase) kalıcı olarak kaldırılır.</li>
+  <li><strong>Satın alma / abonelik kayıtları:</strong> Aboneliklerin Apple App Store ve RevenueCat tarafından işlenir. Yasal ve muhasebe yükümlülükleri gereği bu işlem kayıtları ilgili platformlarda bizim kontrolümüz dışında bir süre tutulabilir. Aktif aboneliğini iptal etmek için Apple Kimliği abonelik ayarlarını kullan.</li>
+  <li><strong>Toplu kullanım istatistikleri:</strong> Kişiyle ilişkilendirilemeyen toplu ürün kullanım istatistikleri silme sonrası kalabilir. Uygulamada etkin bir kilitlenme (crash) raporlama akışı yok.</li>
 </ul>
 
 <p>Gizlilik uygulamalarımız hakkında ayrıntı için: <a href="privacy.html">Gizlilik Politikası</a>. Sorun yaşarsan <a href="mailto:osman.seven97@icloud.com">osman.seven97@icloud.com</a> adresinden yardımcı oluruz.</p>
