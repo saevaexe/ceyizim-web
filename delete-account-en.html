@@ -6,11 +6,13 @@
 <title>Çeyizim — Account & Data Deletion</title>
 <meta name="description" content="How to delete your Çeyizim account and associated data. What is deleted, what is kept, and retention periods.">
 <link rel="stylesheet" href="style.css">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 </head>
 <body>
 <header>
   <div class="nav">
-    <a class="brand" href="/">Çeyiz<span>im</span></a>
+    <a class="brand" href="/"><img src="assets/icon-256.png" alt="" width="30" height="30">Çeyiz<span>im</span></a>
     <ul>
       <li><a href="privacy-en.html">Privacy</a></li>
       <li><a href="support-en.html">Support</a></li>
@@ -25,34 +27,37 @@
 <main>
 <article>
 <h1>Account &amp; Data Deletion</h1>
-<p class="meta">Çeyizim (developer: Osman Seven) · Last updated: 29 September 2026</p>
+<p class="meta">Çeyizim (developer: Osman Seven) · Last updated: 12 October 2026</p>
+
+<section class="summary"><h2>In short</h2><ul><li>In the app: Settings → Delete Account.</li><li>Can't open the app? Request deletion by email.</li><li>Deleted data is removed from our servers within 30 days.</li><li>Deleting your account does not cancel a subscription; cancel it in the store.</li></ul></section>
+<nav class="toc" aria-label="toc"><strong>Contents</strong><ol><li><a href="#option-1-from-within-the-app-recommended">Option 1 — From within the app (recommended)</a></li><li><a href="#option-2-request-by-email">Option 2 — Request by email</a></li><li><a href="#deleting-individual-data-without-deleting-your-a">Deleting individual data without deleting your account</a></li><li><a href="#data-that-is-deleted">Data that is deleted</a></li><li><a href="#data-that-is-kept-and-retention-periods">Data that is kept and retention periods</a></li></ol></nav>
 
 <p>You can delete your Çeyizim account and all associated data at any time. There are two ways: from within the app, or by sending a request via email.</p>
 
-<h2>Option 1 — From within the app (recommended)</h2>
+<h2 id="option-1-from-within-the-app-recommended">Option 1 — From within the app (recommended)</h2>
 <ol>
   <li>Open the Çeyizim app.</li>
   <li>On Home, tap the <strong>⚙️</strong> icon at the top right to open <strong>Settings</strong>.</li>
   <li>Under &ldquo;Legal &amp; Account&rdquo;, tap <strong>Delete Account</strong>.</li>
-  <li>Confirm on the confirmation screen. You may be asked to re-authenticate with Apple for security.</li>
+  <li>Confirm on the confirmation screen. You may be asked to re-authenticate with the account you signed in with (Apple or Google) for security.</li>
 </ol>
-<p class="callout">&ldquo;Delete Account&rdquo; appears only while you are signed in with Apple, and it cannot be undone. If you only want to sign out, choose &ldquo;Log Out&rdquo; instead — your data is kept in that case.</p>
+<p class="callout">&ldquo;Delete Account&rdquo; appears only while you are signed in, and it cannot be undone. The steps are the same on iPhone and Android. If you only want to sign out, choose &ldquo;Log Out&rdquo; instead — your data is kept in that case.</p>
 
-<h2>Option 2 — Request by email</h2>
+<h2 id="option-2-request-by-email">Option 2 — Request by email</h2>
 <p>If you cannot access the app, email us to delete your account:
 <a href="mailto:osman.seven97@icloud.com?subject=Account%20Deletion%20Request">osman.seven97@icloud.com</a>.
 Send the request from the email address associated with your account. After verifying your identity, we will delete your account and data.</p>
 
-<h2>Deleting individual data without deleting your account</h2>
+<h2 id="deleting-individual-data-without-deleting-your-a">Deleting individual data without deleting your account</h2>
 <p>If you don't want to delete your whole account, you can delete specific data from within the app:</p>
 <ul>
   <li><strong>Item:</strong> In item detail, tap <strong>Delete Item</strong>.</li>
   <li><strong>Photo:</strong> In item detail, tap the ✕ at the top right of the photo to remove it.</li>
   <li><strong>Someone else's list:</strong> If you are a member of a list you don't own, Settings → <strong>Leave List</strong> ends your membership.</li>
 </ul>
-<p><strong>Delete Item</strong> removes the item record from the cloud database. Removing a photo with ✕ only removes that photo's link from the item. <strong>In both cases the photo files themselves currently remain in Firebase Storage</strong>; if you want them gone, email us at the address below and we will remove them manually. Leaving a list ends your membership. Your account stays active throughout. There is no separate option that deletes a list you own on its own; a list you own is removed together with account deletion.</p>
+<p><strong>Delete Item</strong> removes the item record from the cloud database. On iOS 2.2.1 and later and on Android, the files of a deleted item and of a photo removed with ✕ are also deleted from Firebase Storage. <strong>On iOS 2.2.0 and earlier the photo files remain in Storage</strong>; if you want them gone, email us at the address below and we will remove them manually. Leaving a list ends your membership. Your account stays active throughout. There is no separate option that deletes a list you own on its own; a list you own is removed together with account deletion.</p>
 
-<h2>Data that is deleted</h2>
+<h2 id="data-that-is-deleted">Data that is deleted</h2>
 <p>When you request account deletion, the following data is permanently deleted:</p>
 <ul>
   <li>Your account and sign-in details (name, email address)</li>
@@ -66,16 +71,16 @@ Send the request from the email address associated with your account. After veri
 <div class="callout">
   <p><strong>What is not deleted yet.</strong> We spell this out because &ldquo;everything is gone&rdquo; would not be true:</p>
   <ul>
-    <li><strong>Photos you uploaded.</strong> Item photos live in Firebase Storage, and the account deletion flow does not currently remove those files. If you want them gone, email us at the address below and we will remove them by hand.</li>
+    <li><strong>Photos on iOS 2.2.0 and earlier.</strong> On these versions account deletion does not remove photo files from Firebase Storage. Update the app before deleting, or email us and we will remove them by hand.</li>
     <li><strong>Traces you left in someone else's list.</strong> Items you added to a partner's or a family member's list, your activity records there, and photos you uploaded to it belong to that list's owner, so they are not removed when your account is deleted. The list owner can delete them — or write to us.</li>
   </ul>
   <p>We are working on closing these gaps. Until then, the email route is the reliable way to get a complete cleanup.</p>
 </div>
 
-<h2>Data that is kept and retention periods</h2>
+<h2 id="data-that-is-kept-and-retention-periods">Data that is kept and retention periods</h2>
 <ul>
   <li><strong>Deletion timeline:</strong> The data listed above as deleted is permanently removed from our servers (Firebase) <strong>within 30 days</strong> of confirmation.</li>
-  <li><strong>Purchase / subscription records:</strong> Your subscriptions are processed by the Apple App Store and RevenueCat. Due to legal and accounting obligations, these transaction records may be retained by those platforms, outside our control, for a period of time. To cancel an active subscription, use your Apple ID subscription settings.</li>
+  <li><strong>Purchase / subscription records:</strong> Your subscriptions are processed by the Apple App Store or Google Play, and RevenueCat. Due to legal and accounting obligations, these transaction records may be retained by those platforms, outside our control, for a period of time. Deleting your account does not cancel a subscription; cancel an active subscription in your App Store or Google Play subscription settings.</li>
   <li><strong>Aggregated usage statistics:</strong> Aggregated, non-identifiable product usage statistics may remain after deletion. The app has no active crash-reporting flow.</li>
 </ul>
 
@@ -86,10 +91,11 @@ Send the request from the email address associated with your account. After veri
 <footer>
   <div class="inner">
     <div>© 2026 Osman Seven</div>
-    <div>
+    <div class="links">
       <a href="privacy-en.html">Privacy</a> ·
+      <a href="terms.html">Terms</a> ·
       <a href="support-en.html">Support</a> ·
-      <a href="terms.html">Terms</a>
+      <a href="delete-account-en.html">Account deletion</a>
     </div>
   </div>
 </footer>

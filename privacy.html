@@ -4,13 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Çeyizim — Gizlilik Politikası</title>
-<meta name="description" content="Çeyizim uygulaması KVKK ve Apple App Privacy uyumlu gizlilik politikası.">
+<meta name="description" content="Çeyizim (iOS ve Android) KVKK, Apple App Privacy ve Google Play Data safety uyumlu gizlilik politikası.">
 <link rel="stylesheet" href="style.css">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 </head>
 <body>
 <header>
   <div class="nav">
-    <a class="brand" href="/">Çeyiz<span>im</span></a>
+    <a class="brand" href="/"><img src="assets/icon-256.png" alt="" width="30" height="30">Çeyiz<span>im</span></a>
     <ul>
       <li><a href="privacy.html">Gizlilik</a></li>
       <li><a href="support.html">Destek</a></li>
@@ -25,23 +27,27 @@
 <main>
 <article>
 <h1>Gizlilik Politikası</h1>
-<p class="meta">Yürürlük tarihi: 26 Nisan 2026 · Son güncelleme: 29 Eylül 2026</p>
+<p class="meta">Yürürlük tarihi: 26 Nisan 2026 · Son güncelleme: 12 Ekim 2026</p>
 
-<p>Çeyizim ("uygulama") gizliliğine önem verir. Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve Apple App Privacy gereklilikleri çerçevesinde uygulamada hangi verileri topladığımızı, neden işlediğimizi ve haklarınızı açıklar.</p>
+<section class="summary"><h2>Kısaca</h2><ul><li>Reklam yok; reklam kimliği toplamayız, verini satmayız ve reklam için paylaşmayız.</li><li>Uygulamayı hesapsız kullanabilirsin. Apple veya Google ile girersen listen Firebase'de yedeklenir.</li><li>Ödemeleri Apple veya Google Play işler; kart bilgini görmeyiz.</li><li>Hesabını ve verilerini uygulama içinden istediğin an silebilirsin.</li></ul></section>
+<nav class="toc" aria-label="toc"><strong>İçindekiler</strong><ol><li><a href="#1-veri-sorumlusu">Veri Sorumlusu</a></li><li><a href="#2-topladigimiz-veriler">Topladığımız Veriler</a></li><li><a href="#3-verileri-neden-i-sliyoruz">Verileri Neden İşliyoruz</a></li><li><a href="#4-ucuncu-taraf-hizmetler">Üçüncü Taraf Hizmetler</a></li><li><a href="#5-veri-saklama-suresi">Veri Saklama Süresi</a></li><li><a href="#6-kvkk-kapsamindaki-haklariniz">KVKK Kapsamındaki Haklarınız</a></li><li><a href="#7-cocuk-politikasi">Çocuk Politikası</a></li><li><a href="#8-veri-guvenligi">Veri Güvenliği</a></li><li><a href="#9-veri-aktarimi">Veri Aktarımı</a></li><li><a href="#10-politika-guncellemeleri">Politika Güncellemeleri</a></li><li><a href="#11-i-letisim">İletişim</a></li></ol></nav>
 
-<h2>1. Veri Sorumlusu</h2>
+<p>Çeyizim ("uygulama") gizliliğine önem verir. Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK), Apple App Privacy ve Google Play Data safety gereklilikleri çerçevesinde uygulamanın iOS ve Android sürümlerinde hangi verileri topladığımızı, neden işlediğimizi ve haklarınızı açıklar.</p>
+
+<h2 id="1-veri-sorumlusu">1. Veri Sorumlusu</h2>
 <p>Bu uygulamayı bireysel geliştirici olarak Osman Seven yayınlamaktadır.</p>
 <ul>
   <li>İletişim: <a href="mailto:osman.seven97@icloud.com">osman.seven97@icloud.com</a></li>
-  <li>Bundle ID: com.osmanseven.ceyizim</li>
+  <li>Uygulama kimliği (iOS ve Android): com.osmanseven.ceyizim</li>
 </ul>
 
-<h2>2. Topladığımız Veriler</h2>
-<p>Uygulama hesapsız çalışacak şekilde tasarlanmıştır. Hesapsız kullanımda liste verileriniz cihazınızda yerel olarak saklanabilir ve buluta yedeklenmeyebilir. Apple ile giriş yaptığınızda, bulut yedekleme veya aile paylaşımı kullandığınızda aşağıdaki veriler işlenir:</p>
+<h2 id="2-topladigimiz-veriler">2. Topladığımız Veriler</h2>
+<p>Uygulama hesapsız çalışacak şekilde tasarlanmıştır. Hesapsız kullanımda liste verileriniz cihazınızda yerel olarak saklanabilir ve buluta yedeklenmeyebilir. Apple veya Google ile giriş yaptığınızda, bulut yedekleme veya aile paylaşımı kullandığınızda aşağıdaki veriler işlenir:</p>
 
 <h3>Hesap bilgileri</h3>
 <ul>
-  <li>E-posta adresi (Sign in with Apple yoluyla; Apple'ın Hide My Email özelliğini kullanırsanız Apple relay adresi)</li>
+  <li>E-posta adresi (Sign in with Apple veya Google ile giriş yoluyla; Apple'ın Hide My Email özelliğini kullanırsanız Apple relay adresi)</li>
+  <li>Giriş sağlayıcısının paylaştığı ad (Apple veya Google)</li>
   <li>Tercih ettiğiniz görünen ad (opsiyonel)</li>
 </ul>
 
@@ -57,43 +63,44 @@
 <h3>Satın alma bilgileri</h3>
 <ul>
   <li>Premium abonelik durumu, plan tipi ve satın alma geçmişi (RevenueCat üzerinden); satın alma sonucu ayrıca ürün analizinde kullanılır</li>
-  <li>Ödeme bilgileriniz Apple tarafından işlenir; biz kart bilgilerinize erişmeyiz.</li>
+  <li>Ödeme bilgileriniz iOS'ta Apple, Android'de Google Play tarafından işlenir; biz kart bilgilerinize erişmeyiz.</li>
 </ul>
 
 <h3>Kullanım ve teşhis verileri</h3>
 <ul>
   <li>Ürün kullanım olayları (hangi ekranlar ziyaret edildi, hangi aksiyonlar alındı) — PostHog EU üzerinden. Bu olaylar ad, e-posta veya liste içeriği taşımaz; ancak kalıcı bir kurulum/cihaz tanıtıcısıyla gönderildiği için tam anonim sayılmaz.</li>
-  <li>Uygulamada etkin bir kilitlenme (crash) raporlama akışı yok: PostHog hata yakalama kapalıdır ve Crashlytics benzeri bir çökme SDK'sı eklenmemiştir. Firebase SDK'ları kendi teknik tanılama verisini gönderebilir.</li>
-  <li>Reklam izleme yapmıyoruz. IDFA toplamıyoruz. Reklam SDK'sı ve ATT izni isteği yok.</li>
+  <li>Çökme raporları: Android sürümünde uygulama çöktüğünde Firebase Crashlytics çökme kaydı (hata izi, cihaz modeli, işletim sistemi sürümü, uygulama sürümü) gönderir. iOS sürümünde etkin bir çökme raporlama akışı yoktur; PostHog hata yakalama her iki sürümde de kapalıdır. Firebase SDK'ları kendi teknik tanılama verisini gönderebilir.</li>
+  <li>Reklam izleme yapmıyoruz. iOS'ta IDFA, Android'de reklam kimliği (Advertising ID) toplamıyoruz. Reklam SDK'sı ve ATT izni isteği yok.</li>
 </ul>
 
-<h2>3. Verileri Neden İşliyoruz</h2>
+<h2 id="3-verileri-neden-i-sliyoruz">3. Verileri Neden İşliyoruz</h2>
 <ul>
   <li><strong>Uygulama işlevselliği:</strong> Liste senkronizasyonu, aile paylaşımı, fotoğraf depolama, abonelik yönetimi.</li>
   <li><strong>Güvenlik:</strong> Kötüye kullanım tespiti, hesap doğrulama.</li>
   <li><strong>Ürün geliştirme:</strong> Kullanım analizleri, hangi özelliklerin işe yaradığını anlamak.</li>
-  <li><strong>Yasal yükümlülükler:</strong> Faturalandırma kayıtları (Apple aracılığıyla).</li>
+  <li><strong>Yasal yükümlülükler:</strong> Faturalandırma kayıtları (Apple veya Google Play aracılığıyla).</li>
 </ul>
 
-<h2>4. Üçüncü Taraf Hizmetler</h2>
+<h2 id="4-ucuncu-taraf-hizmetler">4. Üçüncü Taraf Hizmetler</h2>
 <p>Aşağıdaki hizmetleri uygulamanın çalışması için kullanırız. Her birinin kendi gizlilik politikası vardır:</p>
 <ul>
-  <li><strong>Firebase (Google LLC):</strong> Authentication, Firestore (veritabanı), Storage (fotoğraflar), Cloud Messaging (bildirimler). <a href="https://firebase.google.com/support/privacy">Firebase Gizlilik</a></li>
+  <li><strong>Firebase (Google LLC):</strong> Authentication, Firestore (veritabanı), Storage (fotoğraflar), Cloud Messaging (bildirimler), Crashlytics (yalnız Android, çökme raporları). <a href="https://firebase.google.com/support/privacy">Firebase Gizlilik</a></li>
   <li><strong>RevenueCat:</strong> Abonelik yönetimi, anonim cihaz kimliği. <a href="https://www.revenuecat.com/privacy">RevenueCat Gizlilik</a></li>
   <li><strong>PostHog (EU Cloud):</strong> Ürün analizi. Veriler AB'de (Frankfurt) barındırılır. Autocapture ve session replay açık değildir. <a href="https://posthog.com/privacy">PostHog Gizlilik</a></li>
   <li><strong>Apple:</strong> App Store satın alma, Sign in with Apple, push notification servisi.</li>
+  <li><strong>Google:</strong> Google Play satın alma ve abonelik faturalandırması, Google ile giriş (Google Sign-In).</li>
 </ul>
 
-<h2>5. Veri Saklama Süresi</h2>
+<h2 id="5-veri-saklama-suresi">5. Veri Saklama Süresi</h2>
 <ul>
   <li>Hesap aktifken: veriler senkron tutulur.</li>
   <li>Hesapsız kullanımda: yerel veriler cihazınızda kaldığı sürece saklanır; uygulama silinir veya cihaz değiştirilirse buluttan geri yüklenemeyebilir.</li>
-  <li>Hesap silme talebinizde: silinen kapsamdaki bulut verileri 30 gün içinde kaldırılır. Bu kapsam bugün her şeyi içermiyor — yüklediğiniz fotoğraflar ve başkasının listesinde bıraktığınız kayıtlar şu an otomatik silinmiyor. Neyin silinip neyin kaldığı: <a href="delete-account.html">Hesap ve Veri Silme</a>.</li>
+  <li>Hesap silme talebinizde: silinen kapsamdaki bulut verileri 30 gün içinde kaldırılır. Sahibi olduğunuz listelerin fotoğrafları iOS 2.2.1 ve sonrasında ve Android'de hesap silmeyle birlikte silinir; iOS 2.2.0 ve öncesinde fotoğraf dosyaları otomatik silinmez. Başkasının listesinde bıraktığınız kayıtlar her sürümde liste sahibinde kalır. Neyin silinip neyin kaldığı: <a href="delete-account.html">Hesap ve Veri Silme</a>.</li>
   <li>Ürün analizi verisi: AB'de barındırılan analiz hizmetimizde (PostHog), hizmetin hesabımıza uyguladığı saklama süresi boyunca tutulur.</li>
-  <li>Yasal saklama yükümlülüğü olan veriler (faturalandırma): Apple'ın belirlediği süre.</li>
+  <li>Yasal saklama yükümlülüğü olan veriler (faturalandırma): Apple veya Google'ın belirlediği süre.</li>
 </ul>
 
-<h2>6. KVKK Kapsamındaki Haklarınız</h2>
+<h2 id="6-kvkk-kapsamindaki-haklariniz">6. KVKK Kapsamındaki Haklarınız</h2>
 <p>KVKK madde 11 kapsamında aşağıdaki haklara sahipsiniz:</p>
 <ul>
   <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
@@ -107,23 +114,23 @@
 </ul>
 <p>Bu haklarınızı kullanmak için <a href="mailto:osman.seven97@icloud.com">osman.seven97@icloud.com</a> adresine yazabilirsiniz. Talebiniz en geç 30 gün içinde yanıtlanır. Hesabınızı ve verilerinizi silmenin uygulama içi ve e-posta yolları: <a href="delete-account.html">Hesap ve Veri Silme</a>.</p>
 
-<h2>7. Çocuk Politikası</h2>
+<h2 id="7-cocuk-politikasi">7. Çocuk Politikası</h2>
 <p>Çeyizim 4+ yaş için derecelendirilmiştir, ancak hedef kitle 18+ kullanıcılardır. 13 yaş altı kullanıcılardan bilerek veri toplamayız. Çocuğunuzun veri gönderdiğini düşünüyorsanız <a href="mailto:osman.seven97@icloud.com">bizimle iletişime geçin</a>.</p>
 
-<h2>8. Veri Güvenliği</h2>
+<h2 id="8-veri-guvenligi">8. Veri Güvenliği</h2>
 <ul>
   <li>Tüm trafik HTTPS/TLS üzerinden şifrelenir.</li>
-  <li>Yerel veritabanı (Core Data) iOS'in koruduğu alanda saklanır.</li>
+  <li>Yerel veritabanı iOS'ta Core Data, Android'de SQLite olarak uygulamanın kendi korumalı alanında saklanır.</li>
   <li>Firebase Storage erişimi, Firestore Security Rules ile rol bazlı kısıtlanır.</li>
 </ul>
 
-<h2>9. Veri Aktarımı</h2>
-<p>Firebase Storage fotoğrafları Avrupa bölgesindeki bucket'ta saklanır; Firebase ve Apple servisleri teknik olarak yurt dışındaki altyapılar üzerinden işlenebilir. PostHog verileri Avrupa Birliği'nde (Frankfurt) saklanır. Sınır ötesi aktarımlar KVKK madde 9 kapsamında, ilgili sözleşmesel güvenceler altında gerçekleşir.</p>
+<h2 id="9-veri-aktarimi">9. Veri Aktarımı</h2>
+<p>Firebase Storage fotoğrafları Avrupa bölgesindeki bucket'ta saklanır; Firebase, Apple ve Google servisleri teknik olarak yurt dışındaki altyapılar üzerinden işlenebilir. PostHog verileri Avrupa Birliği'nde (Frankfurt) saklanır. Sınır ötesi aktarımlar KVKK madde 9 kapsamında, ilgili sözleşmesel güvenceler altında gerçekleşir.</p>
 
-<h2>10. Politika Güncellemeleri</h2>
+<h2 id="10-politika-guncellemeleri">10. Politika Güncellemeleri</h2>
 <p>Bu politikayı zaman zaman güncelleyebiliriz. Önemli değişikliklerde uygulama içi bildirim veya e-posta ile bilgi vereceğiz. Yürürlük tarihi her güncellemede yenilenir.</p>
 
-<h2>11. İletişim</h2>
+<h2 id="11-i-letisim">11. İletişim</h2>
 <p>Soru, talep ve şikayetler için: <a href="mailto:osman.seven97@icloud.com">osman.seven97@icloud.com</a></p>
 </article>
 </main>
@@ -131,10 +138,12 @@
 <footer>
   <div class="inner">
     <div>© 2026 Osman Seven</div>
-    <div>
+    <div class="links">
       <a href="privacy.html">Gizlilik</a> ·
+      <a href="terms.html">Koşullar</a> ·
       <a href="support.html">Destek</a> ·
-      <a href="terms.html">Koşullar</a>
+      <a href="kvkk.html">KVKK</a> ·
+      <a href="delete-account.html">Hesap Silme</a>
     </div>
   </div>
 </footer>

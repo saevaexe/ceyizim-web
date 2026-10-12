@@ -6,11 +6,13 @@
 <title>Çeyizim — Privacy Policy</title>
 <meta name="description" content="Privacy policy for the Çeyizim trousseau coordination app. KVKK / GDPR compliant.">
 <link rel="stylesheet" href="style.css">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 </head>
 <body>
 <header>
   <div class="nav">
-    <a class="brand" href="index-en.html">Çeyiz<span>im</span></a>
+    <a class="brand" href="index-en.html"><img src="assets/icon-256.png" alt="" width="30" height="30">Çeyiz<span>im</span></a>
     <ul>
       <li><a href="privacy-en.html">Privacy</a></li>
       <li><a href="support-en.html">Support</a></li>
@@ -25,23 +27,27 @@
 <main>
 <article>
 <h1>Privacy Policy</h1>
-<p class="meta">Effective: April 26, 2026 · Last updated: 29 September 2026</p>
+<p class="meta">Effective: April 26, 2026 · Last updated: 12 October 2026</p>
 
-<p>Çeyizim ("the app") respects your privacy. This document explains what data we collect, why we process it, and what rights you have, in line with Apple's App Privacy requirements, the EU GDPR, and Turkey's KVKK (Law No. 6698 on the Protection of Personal Data).</p>
+<section class="summary"><h2>In short</h2><ul><li>No ads: we don't collect advertising IDs, sell your data or share it for advertising.</li><li>You can use the app without an account. If you sign in with Apple or Google, your list is backed up in Firebase.</li><li>Payments are handled by Apple or Google Play; we never see your card.</li><li>You can delete your account and data from inside the app at any time.</li></ul></section>
+<nav class="toc" aria-label="toc"><strong>Contents</strong><ol><li><a href="#1-data-controller">Data Controller</a></li><li><a href="#2-data-we-collect">Data We Collect</a></li><li><a href="#3-why-we-process-data">Why We Process Data</a></li><li><a href="#4-third-party-services">Third-Party Services</a></li><li><a href="#5-data-retention">Data Retention</a></li><li><a href="#6-your-rights-gdpr-kvkk">Your Rights (GDPR / KVKK)</a></li><li><a href="#7-children">Children</a></li><li><a href="#8-data-security">Data Security</a></li><li><a href="#9-international-transfers">International Transfers</a></li><li><a href="#10-policy-updates">Policy Updates</a></li><li><a href="#11-contact">Contact</a></li></ol></nav>
 
-<h2>1. Data Controller</h2>
+<p>Çeyizim ("the app") respects your privacy. This document explains what data we collect, why we process it, and what rights you have, for the iOS and Android versions of the app, in line with Apple's App Privacy and Google Play Data safety requirements, the EU GDPR, and Turkey's KVKK (Law No. 6698 on the Protection of Personal Data).</p>
+
+<h2 id="1-data-controller">1. Data Controller</h2>
 <p>The app is published by Osman Seven (individual developer).</p>
 <ul>
   <li>Contact: <a href="mailto:osman.seven97@icloud.com">osman.seven97@icloud.com</a></li>
-  <li>Bundle ID: com.osmanseven.ceyizim</li>
+  <li>App ID (iOS and Android): com.osmanseven.ceyizim</li>
 </ul>
 
-<h2>2. Data We Collect</h2>
-<p>The app is designed to work without an account. If you use it without signing in, list data may remain only on your device and may not be backed up to the cloud. When you sign in with Apple, use cloud backup, or use family sharing, the following data is processed:</p>
+<h2 id="2-data-we-collect">2. Data We Collect</h2>
+<p>The app is designed to work without an account. If you use it without signing in, list data may remain only on your device and may not be backed up to the cloud. When you sign in with Apple or Google, use cloud backup, or use family sharing, the following data is processed:</p>
 
 <h3>Account information</h3>
 <ul>
-  <li>Email address (via Sign in with Apple; if you use Hide My Email, this may be an Apple relay address)</li>
+  <li>Email address (via Sign in with Apple or Google sign-in; if you use Hide My Email, this may be an Apple relay address)</li>
+  <li>The name shared by your sign-in provider (Apple or Google)</li>
   <li>Optional display name</li>
 </ul>
 
@@ -57,42 +63,43 @@
 <h3>Purchase information</h3>
 <ul>
   <li>Premium subscription state, plan type and purchase history (via RevenueCat); the purchase outcome is also used in product analytics</li>
-  <li>Payment data is processed by Apple; we never see your card information.</li>
+  <li>Payment data is processed by Apple on iOS and by Google Play on Android; we never see your card information.</li>
 </ul>
 
 <h3>Usage and diagnostics</h3>
 <ul>
   <li>Product usage events (which screens were visited, which actions were taken) via PostHog EU. These events carry no name, email address or list content, but they are sent with a persistent installation/device identifier, so they are not fully anonymous.</li>
-  <li>There is no active crash-reporting flow in the app: PostHog error tracking is off and no crash SDK such as Crashlytics is included. Firebase SDKs may send their own technical diagnostic data.</li>
-  <li>No advertising tracking. We do not collect IDFA. No ad SDK and no ATT prompt.</li>
+  <li>Crash reports: on Android, when the app crashes Firebase Crashlytics sends a crash record (stack trace, device model, OS version, app version). The iOS version has no active crash-reporting flow; PostHog error tracking is off on both. Firebase SDKs may send their own technical diagnostic data.</li>
+  <li>No advertising tracking. We do not collect the IDFA on iOS or the Advertising ID on Android. No ad SDK and no ATT prompt.</li>
 </ul>
 
-<h2>3. Why We Process Data</h2>
+<h2 id="3-why-we-process-data">3. Why We Process Data</h2>
 <ul>
   <li><strong>App functionality:</strong> List sync, family sharing, photo storage, subscription management.</li>
   <li><strong>Security:</strong> Abuse detection, account verification.</li>
   <li><strong>Product improvement:</strong> Usage analytics to understand which features work.</li>
-  <li><strong>Legal obligations:</strong> Billing records (via Apple).</li>
+  <li><strong>Legal obligations:</strong> Billing records (via Apple or Google Play).</li>
 </ul>
 
-<h2>4. Third-Party Services</h2>
+<h2 id="4-third-party-services">4. Third-Party Services</h2>
 <ul>
-  <li><strong>Firebase (Google LLC):</strong> Authentication, Firestore (database), Storage (photos), Cloud Messaging (notifications). <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a></li>
+  <li><strong>Firebase (Google LLC):</strong> Authentication, Firestore (database), Storage (photos), Cloud Messaging (notifications), Crashlytics (Android only, crash reports). <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a></li>
   <li><strong>RevenueCat:</strong> Subscription management, anonymous device ID. <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy</a></li>
   <li><strong>PostHog (EU Cloud):</strong> Product analytics. Data hosted in the EU (Frankfurt). Autocapture and session replay are explicitly disabled. <a href="https://posthog.com/privacy">PostHog Privacy</a></li>
   <li><strong>Apple:</strong> App Store purchases, Sign in with Apple, push notification service.</li>
+  <li><strong>Google:</strong> Google Play purchases and subscription billing, Google Sign-In.</li>
 </ul>
 
-<h2>5. Data Retention</h2>
+<h2 id="5-data-retention">5. Data Retention</h2>
 <ul>
   <li>While account is active: data is kept in sync.</li>
   <li>Without an account: local data is kept as long as it remains on your device; it may not be recoverable from the cloud if the app is deleted or you switch devices.</li>
-  <li>On account deletion request: cloud data within the deleted scope is removed within 30 days. That scope is not yet everything — photos you uploaded and records you left in someone else's list are not deleted automatically today. What goes and what stays: <a href="delete-account-en.html">Account &amp; Data Deletion</a>.</li>
+  <li>On account deletion request: cloud data within the deleted scope is removed within 30 days. Photos in lists you own are deleted with your account on iOS 2.2.1 and later and on Android; on iOS 2.2.0 and earlier the photo files are not deleted automatically. Records you left in someone else's list stay with that list's owner on every version. What goes and what stays: <a href="delete-account-en.html">Account &amp; Data Deletion</a>.</li>
   <li>Product analytics data: kept with our EU-hosted analytics provider (PostHog) for the retention period that service applies to our account.</li>
-  <li>Billing records: per Apple's retention policy.</li>
+  <li>Billing records: per Apple's or Google's retention policy.</li>
 </ul>
 
-<h2>6. Your Rights (GDPR / KVKK)</h2>
+<h2 id="6-your-rights-gdpr-kvkk">6. Your Rights (GDPR / KVKK)</h2>
 <p>You have the right to:</p>
 <ul>
   <li>Access the personal data we hold about you</li>
@@ -105,23 +112,23 @@
 </ul>
 <p>To exercise these rights, email <a href="mailto:osman.seven97@icloud.com">osman.seven97@icloud.com</a>. We respond within 30 days. In-app and email routes for deleting your account and data: <a href="delete-account-en.html">Account &amp; Data Deletion</a>.</p>
 
-<h2>7. Children</h2>
+<h2 id="7-children">7. Children</h2>
 <p>The app is rated 4+ but the target audience is 18+. We do not knowingly collect data from children under 13. If you believe a child has provided data, please <a href="mailto:osman.seven97@icloud.com">contact us</a>.</p>
 
-<h2>8. Data Security</h2>
+<h2 id="8-data-security">8. Data Security</h2>
 <ul>
   <li>All traffic encrypted via HTTPS/TLS.</li>
-  <li>Local database (Core Data) protected by iOS Data Protection.</li>
+  <li>Local database (Core Data on iOS, SQLite on Android) stored in the app's own protected storage.</li>
   <li>Firebase Storage and Firestore access guarded by role-based Security Rules.</li>
 </ul>
 
-<h2>9. International Transfers</h2>
-<p>Firebase Storage photos are stored in a European regional bucket; Firebase and Apple services may still process technical data on infrastructure outside Turkey. PostHog data is stored in the European Union (Frankfurt). Cross-border transfers rely on Standard Contractual Clauses and KVKK Article 9 safeguards.</p>
+<h2 id="9-international-transfers">9. International Transfers</h2>
+<p>Firebase Storage photos are stored in a European regional bucket; Firebase, Apple and Google services may still process technical data on infrastructure outside Turkey. PostHog data is stored in the European Union (Frankfurt). Cross-border transfers rely on Standard Contractual Clauses and KVKK Article 9 safeguards.</p>
 
-<h2>10. Policy Updates</h2>
+<h2 id="10-policy-updates">10. Policy Updates</h2>
 <p>We may update this policy from time to time. For significant changes, we will notify you via in-app notification or email. The effective date is updated on every revision.</p>
 
-<h2>11. Contact</h2>
+<h2 id="11-contact">11. Contact</h2>
 <p>Questions, requests, complaints: <a href="mailto:osman.seven97@icloud.com">osman.seven97@icloud.com</a></p>
 </article>
 </main>
@@ -129,10 +136,11 @@
 <footer>
   <div class="inner">
     <div>© 2026 Osman Seven</div>
-    <div>
+    <div class="links">
       <a href="privacy-en.html">Privacy</a> ·
+      <a href="terms.html">Terms</a> ·
       <a href="support-en.html">Support</a> ·
-      <a href="terms.html">Terms</a>
+      <a href="delete-account-en.html">Account deletion</a>
     </div>
   </div>
 </footer>
