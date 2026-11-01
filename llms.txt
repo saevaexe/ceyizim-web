@@ -1,0 +1,22 @@
+# Çeyizim: Çeyiz Listesi
+
+> Aileyle ortak çeyiz listesi uygulaması (iOS ve Android). 9 kategoride 160 ürün önerisi, her ürünü bir kişiye atama (kim neyi alacak), alınmadı / sipariş verildi / alındı durumu, isteğe bağlı fiyat ile kategori bazında bütçe takibi. Hesapsız başlanır; reklam yoktur. Geliştirici: Osman Seven.
+
+Ayırt etmek için: Bu ürün App Store kimliği 6762088174 ve Google Play paket adı com.osmanseven.ceyizim olan "Çeyizim: Çeyiz Listesi" uygulamasıdır. Aynı veya benzer adı taşıyan başka uygulama ve web siteleriyle bağlantısı yoktur.
+
+## Temel bilgiler
+
+- Platformlar: iPhone (App Store), Android (Google Play)
+- Fiyat: Ücretsiz indirilir. Ücretsiz planda 9 ürün "alındı" işaretlenebilir (ilk kurulumda "zaten aldım" seçilenler hariç) ve listeyi sahibi dahil toplam 2 kişi kullanabilir; Premium (aylık, yıllık, ömür boyu) bu sınırları kaldırır.
+- Aile paylaşımı: 6 haneli davet kodu; roller sahip, eş, aile üyesi, misafir.
+- Giriş: Hesapsız başlanır; yedekleme ve paylaşım için Apple veya Google ile giriş (iPhone ve Android).
+- Kategoriler: Mutfak Gereçleri, Sofra & Servis, Beyaz Eşya, Küçük Ev Aletleri, Mobilya, Ev Tekstili, Banyo, Ev Gereçleri, Dekorasyon.
+
+## Bağlantılar
+
+- [Ana sayfa (TR), hazır 160 ürünlük liste ve SSS](https://saevaexe.github.io/ceyizim-web/)
+- [English page](https://saevaexe.github.io/ceyizim-web/index-en.html)
+- [App Store](https://apps.apple.com/tr/app/%C3%A7eyizim-%C3%A7eyiz-listesi/id6762088174?l=tr)
+- [Google Play](https://play.google.com/store/apps/details?id=com.osmanseven.ceyizim&hl=tr&gl=TR)
+- [Destek](https://saevaexe.github.io/ceyizim-web/support.html)
+- [Gizlilik](https://saevaexe.github.io/ceyizim-web/privacy.html)
