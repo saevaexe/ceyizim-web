@@ -14,9 +14,9 @@ Ayırt etmek için: Bu ürün App Store kimliği 6762088174 ve Google Play paket
 
 ## Bağlantılar
 
-- [Ana sayfa (TR), hazır 160 ürünlük liste ve SSS](https://saevaexe.github.io/ceyizim-web/)
-- [English page](https://saevaexe.github.io/ceyizim-web/index-en.html)
+- [Ana sayfa (TR), hazır 160 ürünlük liste ve SSS](https://ceyizimlistesi.com/)
+- [English page](https://ceyizimlistesi.com/index-en.html)
 - [App Store](https://apps.apple.com/tr/app/%C3%A7eyizim-%C3%A7eyiz-listesi/id6762088174?l=tr)
 - [Google Play](https://play.google.com/store/apps/details?id=com.osmanseven.ceyizim&hl=tr&gl=TR)
-- [Destek](https://saevaexe.github.io/ceyizim-web/support.html)
-- [Gizlilik](https://saevaexe.github.io/ceyizim-web/privacy.html)
+- [Destek](https://ceyizimlistesi.com/support.html)
+- [Gizlilik](https://ceyizimlistesi.com/privacy.html)
