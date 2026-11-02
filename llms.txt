@@ -1,6 +1,6 @@
 # Çeyizim: Çeyiz Listesi
 
-> Aileyle ortak çeyiz listesi uygulaması (iOS ve Android). 9 kategoride 160 ürün önerisi, her ürünü bir kişiye atama (kim neyi alacak), alınmadı / sipariş verildi / alındı durumu, isteğe bağlı fiyat ile kategori bazında bütçe takibi. Hesapsız başlanır; reklam yoktur. Geliştirici: Osman Seven.
+> Aileyle ortak çeyiz listesi uygulaması (iOS ve Android). 9 kategoride 160 ürün önerisi, her ürünü bir kişiye atama (kim neyi alacak), alınmadı / alındı durumu, isteğe bağlı fiyat ile kategori bazında bütçe takibi. Hesapsız başlanır; reklam yoktur. Geliştirici: Osman Seven.
 
 Ayırt etmek için: Bu ürün App Store kimliği 6762088174 ve Google Play paket adı com.osmanseven.ceyizim olan "Çeyizim: Çeyiz Listesi" uygulamasıdır. Aynı veya benzer adı taşıyan başka uygulama ve web siteleriyle bağlantısı yoktur.
 
