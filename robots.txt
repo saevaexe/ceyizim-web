@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ceyizimlistesi.com/sitemap.xml
