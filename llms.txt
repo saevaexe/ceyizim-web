@@ -15,6 +15,7 @@ Ayırt etmek için: Bu ürün App Store kimliği 6762088174 ve Google Play paket
 ## Bağlantılar
 
 - [Ana sayfa (TR), hazır 160 ürünlük liste ve SSS](https://ceyizimlistesi.com/)
+- [Çeyiz listesi 2026: 160 ürünlük yazdırılabilir tam liste ve CSV](https://ceyizimlistesi.com/ceyiz-listesi.html)
 - [English page](https://ceyizimlistesi.com/index-en.html)
 - [App Store](https://apps.apple.com/tr/app/%C3%A7eyizim-%C3%A7eyiz-listesi/id6762088174?l=tr)
 - [Google Play](https://play.google.com/store/apps/details?id=com.osmanseven.ceyizim&hl=tr&gl=TR)
