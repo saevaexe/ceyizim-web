@@ -7,7 +7,7 @@
 - Terms & subscription disclosure
 - Universal Links AASA dosyası
 
-Live URL: https://saevaexe.github.io/ceyizim-web/
+Live URL: https://ceyizimlistesi.com/ (eski saevaexe.github.io/ceyizim-web/ adresi 301 ile yönlenir)
 
 ## Yapı
 
