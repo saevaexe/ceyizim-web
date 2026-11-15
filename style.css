@@ -582,3 +582,9 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 16px; }
   .mal-t th, .mal-t td { padding: 6px 4px; }
   .mal-t th.n, .mal-t td.n { display: none; }
 }
+
+/* menü: dar ekranda Gizlilik/Koşullar altbilgide kalır */
+.nav ul a { white-space: nowrap; }
+@media (max-width: 600px) {
+  .nav .nav-ek { display: none; }
+}
