@@ -545,3 +545,40 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 16px; }
   .lst tr { break-inside: avoid; }
   .lst td.ck span { border-color: #000; }
 }
+
+/* ---------- ne kadar tutar? ---------- */
+.maliyet { scroll-margin-top: 20px; }
+.maliyet h3 span, .mal-t caption span { color: var(--ink-faint); font-weight: 400; font-size: .85em; }
+.mal-ozet { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 18px 0 8px; }
+.mal-ozet div { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; }
+.mal-ozet span, .mal-ozet small { display: block; color: var(--ink-faint); font-size: 13px; }
+.mal-ozet strong { display: block; font-size: 20px; color: var(--ink); margin: 2px 0; font-variant-numeric: tabular-nums; }
+.mal-grafik { margin: 8px 0 14px; }
+.g-sat { display: grid; grid-template-columns: 9.5em 1fr 7.5em; gap: 10px; align-items: center; margin: 8px 0; font-size: 15px; }
+.g-sat svg { width: 100%; height: 14px; display: block; }
+.g-de { text-align: right; font-variant-numeric: tabular-nums; color: var(--ink); }
+.g-iz { fill: var(--line-soft); }
+.g-ar { fill: var(--lila); }
+.g-or { fill: var(--lila-deep); }
+.g-not { font-size: 13px; color: var(--ink-faint); margin: 4px 0 0; }
+.mal-t { width: 100%; border-collapse: collapse; font-size: 15px; margin: 0 0 18px; }
+.mal-t caption { text-align: left; font-weight: 600; padding: 10px 0 4px; color: var(--ink); }
+.mal-t th { text-align: right; font-weight: 600; color: var(--ink-faint); font-size: 13px; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+.mal-t td { text-align: right; padding: 7px 8px; border-bottom: 1px solid var(--line-soft); color: var(--ink); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.mal-t th:first-child, .mal-t td:first-child { text-align: left; white-space: normal; }
+.mal-t td.n, .mal-t th.n { color: var(--ink-faint); }
+.mal-t td.yt { text-align: left; color: var(--ink-faint); font-style: italic; }
+.mal-t tr.top td { font-weight: 700; border-top: 1px solid var(--line); }
+.mal-yontem { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 4px 18px 8px; margin: 22px 0 18px; }
+.mal-yontem ul { padding-left: 18px; }
+.mal-yontem li { margin: 6px 0; line-height: 1.55; }
+@media (max-width: 560px) {
+  .mal-ozet { grid-template-columns: 1fr; }
+  .mal-ozet div { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+  .mal-ozet small { display: none; }
+  .g-sat { grid-template-columns: 1fr 6.5em; }
+  .g-sat .g-ad { grid-column: 1 / -1; margin-bottom: -6px; }
+  .mal-t { font-size: 14px; }
+  .mal-t th, .mal-t td { padding: 6px 4px; }
+  .mal-t th.n, .mal-t td.n { display: none; }
+}
