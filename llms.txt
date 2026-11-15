@@ -16,7 +16,7 @@ Ayırt etmek için: Bu ürün App Store kimliği 6762088174 ve Google Play paket
 
 - [Ana sayfa (TR), hazır 160 ürünlük liste ve SSS](https://ceyizimlistesi.com/)
 - [Çeyiz listesi 2026: 160 ürünlük yazdırılabilir tam liste ve CSV](https://ceyizimlistesi.com/ceyiz-listesi.html)
-- [Çeyiz ne kadar tutar: 34 ürünün (beyaz eşya, küçük ev aletleri, mobilya) Kasım 2026 fiyat seviyeleri, yöntem ve CSV](https://ceyizimlistesi.com/ceyiz-listesi.html#maliyet)
+- [Çeyiz ne kadar tutar: 34 ürünün (beyaz eşya, küçük ev aletleri, mobilya) Kasım 2026 fiyat seviyeleri, yöntem ve CSV](https://ceyizimlistesi.com/ceyiz-ne-kadar-tutar.html)
 - [Página em português (pt-BR)](https://ceyizimlistesi.com/index-pt.html)
 - [Lista de enxoval de casa nova (pt-BR): os mesmos 160 itens para imprimir e CSV](https://ceyizimlistesi.com/lista-de-enxoval.html)
 - [English page](https://ceyizimlistesi.com/index-en.html)
